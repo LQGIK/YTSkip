@@ -1,0 +1,15 @@
+{
+    "name": "YT Skip",
+    "manifest_version": 2,
+    "version": "2",
+    "permissions": [
+      "activeTab"
+    ],
+    "content_scripts": [
+        {
+          "matches": ["https://www.youtube.com/watch?v=*"],
+          "js": ["skip.js"],
+          "run_at": "document_idle"
+        }
+      ]
+  }
